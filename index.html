@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        :focus {
+            outline: none;
+        }
+
+        body {
+            color: #333;
+            background: #f6f6f6;
+            font-family: 'Raleway', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .faq-header {
+            font-size: 16px;
+            font-weight: 700;
+            color: #c8c9cb;
+            border-bottom: 1px dotted #ccc;
+            padding: 14px 20px;
+        }
+
+        .faq-content {
+            margin: 0 auto;
+            background-color: white;
+        }
+
+        .faq-question {
+
+            border-bottom: 1px dotted #ccc;
+        }
+
+        .panel-title {
+            font-size: 16px;
+            width: 100%;
+            position: relative;
+            margin: 0;
+            padding: 20px 20px 20px 20px;
+            display: block;
+            cursor: pointer;
+        }
+
+        .panel-content {
+            font-size: 20px;
+            padding: 0px 14px;
+            margin: 0px;
+            height: 0;
+            overflow: hidden;
+            z-index: -1;
+            position: relative;
+            opacity: 0;
+            -webkit-transition: .4s ease;
+            -moz-transition: .4s ease;
+            -o-transition: .4s ease;
+            transition: .4s ease;
+        }
+
+        .panel:checked~.panel-content {
+            height: auto;
+            opacity: 1;
+            padding: 0px 20px 30px 20px;
+            z-index: 1;
+        }
+
+        .plus {
+            position: absolute;
+            right: 20px;
+            z-index: 5;
+            font-size: 30px;
+            line-height: 62px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            -o-user-select: none;
+            user-select: none;
+            -webkit-transition: .2s ease;
+            -moz-transition: .2s ease;
+            -o-transition: .2s ease;
+            transition: .2s ease;
+        }
+
+        .panel:checked~.plus {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .panel {
+            display: none;
+        }
+
+        .panel-content ul>li>p {
+            margin: 10px 0px;
+            font-size: 14px;
+            line-height: 26px;
+        }
+
+        .panel-content ul>li:last-child>p {
+            margin-bottom: 0px;
+        }
+
+
+
+        .panel-content ul>li {
+            margin-left: 20px;
+            padding-left: 0px;
+            list-style-type: circle;
+
+
+        }
+
+        .panel-content code {
+            margin: 0px 2px;
+            padding: 2px 4px;
+            font-size: 14px;
+            background: #f2f4f5;
+            border: 1px solid #f0f0f0;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="faq-header">使用指南</div>
+    <div class="faq-content">
+        <div class="faq-question">
+            <input id="" type="checkbox" class="panel">
+            <div class="plus">›</div>
+            <label for="" class="panel-title">门锁使用说明</label>
+
+        </div>
+        <div class="faq-question">
+            <input id="" type="checkbox" class="panel">
+            <div class="plus">›</div>
+            <label for="" class="panel-title">商城使用说明</label>
+
+        </div>
+
+
+
+    </div>
+
+    <div class="faq-header">软件问题</div>
+    <div class="faq-content">
+        <div class="faq-question">
+            <input id="q1" type="checkbox" class="panel">
+            <div class="plus">+</div>
+            <label for="q1" class="panel-title">怎么下载到家啦App</label>
+            <div class="panel-content">
+                <ul>
+                    <li>
+                        <p>安卓手机在手机应用市场搜索<code>'到家啦'</code>或<code>'到家啦智能门锁'</code>下载；苹果手机在App
+                            Store中搜索<code>'到家啦'</code>下载；</p>
+                    </li>
+                    <li>
+                        <p>如果应用市场搜索不到,也可以在微信中搜索<code>全民认证科技(杭州)有限公司</code>,关注公司公众号,在"App下载"中下载"到家啦"App.</p>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+        <div class="faq-question">
+            <input id="q2" type="checkbox" class="panel">
+            <div class="plus">+</div>
+            <label for="q2" class="panel-title">使用App打开门怎么办</label>
+            <div class="panel-content">
+                <ul>
+                    <li>
+                        <p>安卓手机在手机应用市场搜索<code>'到家啦'</code>或<code>'到家啦智能门锁'</code>下载；苹果手机在App
+                            Store中搜索<code>'到家啦'</code>下载；</p>
+                    </li>
+                    <li>
+                        <p>如果应用市场搜索不到,也可以在微信中搜索<code>全民认证科技(杭州)有限公司</code>,关注公司公众号,在"App下载"中下载"到家啦"App.</p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="faq-question">
+            <input id="q3" type="checkbox" class="panel">
+            <div class="plus">+</div>
+            <label for="q3" class="panel-title">蓝牙连接不上或蓝牙超时</label>
+            <div class="panel-content">
+                <ul>
+                    <li>
+                        <p>A woodchuck would chuck all the wood he could chuck, if a woodchuck could chuck
+                            wood!</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="faq-header">门锁问题</div>
+    <div class="faq-content">
+
+
+        <div class="faq-question">
+            <input id="q4" type="checkbox" class="panel">
+            <div class="plus">+</div>
+            <label for="q4" class="panel-title">
+                <ul>
+                    <li>
+                        <p>
+                            What happens if Pinocchio says, "my nose will grow now"?</p>
+                    </li>
+                </ul>
+            </label>
+            <div class="panel-content">
+                <ul>
+                    <li>
+                        <p>
+                            Certain questions are better left &nbsp; <a
+                                href="https://en.wikipedia.org/wiki/The_Unanswered_Question"
+                                target="_blank">unanswered</a>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
